@@ -32,14 +32,20 @@ If you want to change the style of the button, you can replace "$("body").respon
 
 	$("body").responsiveTools({
 			"height": "30px",
-			"backgroundcolor": "rgb(76, 175, 80)",
-			"borderradius": "4px",                
+                	"backgroundcolor": "#04B5BA",
+			"borderradius": "4px",
+			"position": "absolute",
+			"right": "15px",
 			"lineheight": "30px",
 			"color": "rgb(255, 255, 255)",
 			"textalign": "center",
 			"fontfamily": "arial",
-			"fontsize": "14px",                
-			"padding": "0 10px",                         
+			"fontsize": "14px",
+			"top": "15px",
+			"padding": "0 10px",
+			"cursor": "pointer",
+			"zindex":"8989898",
+			"baseURL" : '',                    
 	});
 
 Usage: 
