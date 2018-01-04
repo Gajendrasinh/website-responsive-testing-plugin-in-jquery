@@ -1,21 +1,47 @@
-# website-responsive-testing-plugin-in-jquery
-this is jquery plugin use for testing your website in responsive layout.
+Version:
+-----------------------------------------------------------------------------------------------------------------------
+v.1.0.0
 
-# Installation
+Contributors:
+-----------------------------------------------------------------------------------------------------------------------
+Bhavesh Doshi, Gajendrasinh Zala
 
-How to use it:
+Tags: 
+-----------------------------------------------------------------------------------------------------------------------
+responsive layout, test responsive design
 
-1. Load the jQuery library and jQuery resposive's javascript at the end of the document so the pages load faster.
+Description:
+-----------------------------------------------------------------------------------------------------------------------
+This is a small lightweight plugin used to check the responsive design for your webpage.
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+Installation:
+-----------------------------------------------------------------------------------------------------------------------
+It is very simple to install this plugin. 
 
-<script src="{{folder}}/responsive.js"></script>
+Step 1) Unzip  responsive-plugin.zip file to the root of your project.
 
-2. Place resposive.html file in project root folder.
+Step 2) You need to include below code in your webpage before end of body tag.
+	<script src="responsive-plugin.js"></script>	
+	<script>
+		$(document).ready(function(){	
+			$("body").responsiveTools();	
+		});
+	</script>
 
-3. Call the plugin.
-  <script>
-    $(function(){
-      $('body').responsiveTools();	
-    });
-  </script>
+If you want to change the style of the button, you can replace "$("body").responsiveTools();" with below code and apply the values of attributes you want:
+
+	$("body").responsiveTools({
+			"height": "30px",
+			"backgroundcolor": "rgb(76, 175, 80)",
+			"borderradius": "4px",                
+			"lineheight": "30px",
+			"color": "rgb(255, 255, 255)",
+			"textalign": "center",
+			"fontfamily": "arial",
+			"fontsize": "14px",                
+			"padding": "0 10px",                         
+	});
+
+Usage: 
+-----------------------------------------------------------------------------------------------------------------------
+You can check the responsiveness of your webpage. Once you install the plugin, it will automatically add a "Check Responsive View" button in the top right corner. When you click on that button, you will be able to view your webpage with different resolutions in a new tab/window. 
